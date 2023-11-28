@@ -10,7 +10,7 @@ end
 
 function M.load()
     if vim.version().minor < 8 then
-        vim.notify_once("fleet-theme.nvim: you must use neovim 0.8 or higher")
+        vim.notify_once("intellij-new-theme.nvim: you must use neovim 0.8 or higher")
         return
     end
 
@@ -19,10 +19,10 @@ function M.load()
         vim.cmd.hi("clear")
     end
 
-    vim.g.colors_name = "fleet"
+    vim.g.colors_name = "intellij-new"
     vim.o.termguicolors = true
 
-    local groups = require("fleet-theme.groups").setup()
+    local groups = require("intellij-new-theme.groups").setup()
 
     -- add highlights
     for group, settings in pairs(groups) do

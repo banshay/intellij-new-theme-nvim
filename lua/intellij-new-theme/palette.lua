@@ -1,7 +1,7 @@
 local M = {}
 
 M.palette = {
-    background = "#181818",
+    background = "#1e1f22",
     darkest = "#1e1e1e",
     darker = "#292929",
     dark = "#898989",
@@ -11,14 +11,14 @@ M.palette = {
 
     dark_gray = "#535353",
     light_gray = "#6d6d6d",
-    purple = "#a390f0",
+    purple = "#b373a9",
     light_blue = "#7dbeff",
-    blue = "#52a7f6",
-    pink = "#d898d8",
+    blue = "#4da7f4",
+    pink = "#c77dbb",
     green = "#afcb85",
     cyan = "#78d0bd",
-    orange = "#efb080",
-    yellow = "#e5c995",
+    orange = "#cb804c",
+    yellow = "#edae58",
     red = "#CC7C8A",
 
     blue_accent = "#2197F3",
