@@ -76,11 +76,11 @@ function M.setup()
     -- Uncomment and edit if you want more specific syntax highlighting.
 
     Constant                    = { fg = palette.purple },             -- (preferred) any constant
-    String                      = { fg = palette.pink },               --   a string constant: "this is a string"
+    String                      = { fg = palette.green },              --   a string constant: "this is a string"
     Character                   = { fg = palette.yellow },             --  a character constant: 'c', '\n'
-    Number                      = { fg = palette.yellow },             --   a number constant: 234, 0xff
+    Number                      = { fg = palette.cyan },               --   a number constant: 234, 0xff
     Boolean                     = { fg = palette.pink },               --  a boolean constant: TRUE, false
-    Float                       = { fg = palette.yellow },             --    a floating point constant: 2.3e10
+    Float                       = { fg = palette.cyan },               --    a floating point constant: 2.3e10
 
     Identifier                  = { fg = palette.light },              -- (preferred) any variable name
     Function                    = { fg = palette.blue },               -- function name (also: methods for classes)
@@ -162,7 +162,7 @@ function M.setup()
     ["@function"]               = { link = "Function" },   -- Function calls and definitions.
     ["@function.builtin"]       = { fg = palette.green },  -- Built-in functions: `print` in Lua.
     ["@function.macro"]         = { fg = palette.green },  -- Macro defined functions (calls and definitions): each `macro_rules` in Rust.
-    ["@function.call"]         = { fg = palette.yellow },  -- Macro defined functions (calls and definitions): each `macro_rules` in Rust.
+    ["@function.call"]          = { fg = palette.yellow }, -- Macro defined functions (calls and definitions): each `macro_rules` in Rust.
     -- ["@include"]            = { }, -- File or module inclusion keywords: `#include` in C, `use` or `extern crate` in Rust.
     ["@keyword"]                = { fg = palette.orange }, -- Keywords that don't fit into other categories.
     -- ["@keyword.function"]    = { }, -- Keywords used to define a function: `function` in Lua, `def` and `lambda` in Python.
@@ -212,6 +212,8 @@ function M.setup()
     ["@type_builtin"]           = { fg = palette.cyan },      -- Built-in types: `i32` in Rust.
     ["@variable"]               = { fg = palette.light },     -- Variable names that don't fit into other categories.
     -- ["@variable.builtin"]    = { Identifier }, -- Variable names defined by the language: `this` or `self` in Javascript.
+
+    ["ocamlModPath"]            = { fg = palette.normal },
 
     -- These groups are for the native LSP client and diagnostic system. Some
     -- other LSP clients may use these groups, or use their own. Consult your
