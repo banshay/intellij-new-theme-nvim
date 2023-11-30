@@ -184,7 +184,7 @@ function M.setup()
     ["@punctuation.bracket"]    = { fg = palette.light }, -- Brackets, braces, parentheses, etc.
     ["@punctuation.special"]    = { fg = palette.light }, -- Special punctuation that doesn't fit into the previous categories.
     -- ["@repeat"]             = { }, -- Keywords related to loops: `for`, `while`, etc.
-    ["@string"]                 = { fg = palette.pink },  -- String literals.
+    ["@string"]                 = { fg = palette.green }, -- String literals.
     -- ["@string.regex"]        = { }, -- Regular expression literals.
     -- ["@string.escape"]       = { }, -- Escape characters within a string: `\n`, `\t`, etc.
     ["@string.special"]         = { fg = palette.cyan },       -- Strings with special meaning that don't fit into the previous categories.
